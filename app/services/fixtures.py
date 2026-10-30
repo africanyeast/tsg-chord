@@ -94,9 +94,30 @@ def reset(session: Session, fixtures_dir: Path = FIXTURES, on: date | None = Non
                 status=p["status"],
                 provider=p.get("provider"),
                 reference=p.get("reference"),
+                charged_kobo=p.get("charged_kobo"),
                 confirmed_at=datetime.combine(confirmed, datetime.min.time()) if confirmed else None,
             )
         )
+
+    for r in seed.get("pending_requests", []):
+        event = _day(base, r.get("event_day_offset"))
+        session.add(
+            PendingAction(
+                id=r["id"],
+                kind="order_request",
+                customer_id=r["customer_id"],
+                payload={
+                    "garments": r["garments"],
+                    "event_date": event.isoformat() if event else None,
+                    "event_date_text": None,
+                    "notes": r.get("notes"),
+                    "source_message_ids": [],
+                    "new_customer": None,
+                },
+                status="pending",
+            )
+        )
+    session.flush()
 
     by_phone = {_digits(c.phone): c.id for c in session.scalars(select(Customer))}
     conversations = messages = 0

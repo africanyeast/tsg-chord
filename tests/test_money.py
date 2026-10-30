@@ -112,7 +112,7 @@ def test_paystack_down_on_approve_changes_nothing(session, monkeypatch) -> None:
     monkeypatch.setattr(paystack, "initialize", _down)
     assert approve(SIMI, "85k", "40k", request_id=req)["error"]["code"] == "UPSTREAM_ERROR"
     assert session.scalar(select(func.count()).select_from(Order).where(Order.customer_id == "CUS-001")) == 1
-    assert list_pending(SIMI)["pending"][0]["request_id"] == req
+    assert req in [r["request_id"] for r in list_pending(SIMI)["pending"]]
 
 
 def test_paystack_down_on_check_payment_changes_nothing(session, monkeypatch) -> None:

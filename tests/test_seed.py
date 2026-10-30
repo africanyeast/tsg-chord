@@ -57,3 +57,13 @@ def test_view_pages_and_brief_overview(client) -> None:
     brief = get_brief("customer_SIMI")
     assert brief["overview"]["active_orders"] > brief["overview"]["needing_attention"] > 0
     assert brief["overdue_balances"][0]["customer_url"].endswith("/v/customer/CUS-003")
+
+
+def test_seed_has_held_payment_and_waiting_requests(client) -> None:
+    client.post("/admin/reset", headers={"Authorization": "Bearer test-admin"})
+    from app.tools import get_brief, list_pending
+
+    assert list_pending("customer_SIMI")["count"] == 2
+    brief = get_brief("customer_SIMI")
+    assert [h["order_id"] for h in brief["payments_held_wrong_amount"]] == ["ORD-1015"]
+    assert len(brief["pending_approvals"]) == 2

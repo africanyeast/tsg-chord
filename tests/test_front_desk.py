@@ -46,7 +46,7 @@ def test_request_creates_exactly_one_pending_action(session) -> None:
     again = request_order(SENDER, ["emerald lace gown"], "2026-12-12", "wedding guest", ids)
     assert first["status"] == "requested"
     assert again == {**first, "status": "already_requested"}
-    rows = session.scalars(select(PendingAction)).all()
+    rows = session.scalars(select(PendingAction).where(PendingAction.sender_id == SENDER)).all()
     assert len(rows) == 1 and rows[0].payload["source_message_ids"] == ids
 
 

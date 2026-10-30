@@ -47,6 +47,11 @@
   ],
   "payments": [
     {"id":"PAY-001","order_id":"ORD-1003","amount_kobo":15000000,"status":"confirmed","provider":"paystack","reference":"PSK-OKORO-600","confirmed_day_offset":-14},
-    {"id":"PAY-002","order_id":"ORD-1005","amount_kobo":5000000,"status":"claimed_unconfirmed","provider":null,"reference":null,"confirmed_day_offset":null}
+    {"id":"PAY-002","order_id":"ORD-1005","amount_kobo":5000000,"status":"claimed_unconfirmed","provider":null,"reference":null,"confirmed_day_offset":null},
+    {"id":"PAY-003","order_id":"ORD-1015","amount_kobo":5500000,"charged_kobo":5000000,"status":"held","provider":"paystack","reference":"PSK-FASHOLA-HELD","confirmed_day_offset":null}
+  ],
+  "pending_requests": [
+    {"id":"REQ-0001","customer_id":"CUS-002","garments":[{"type":"ankara blouse and skirt","colour":"blue"}],"event_day_offset":25,"notes":"Wants it ready two weeks before the event"},
+    {"id":"REQ-0002","customer_id":"CUS-005","garments":[{"type":"senator outfit","colour":"black"}],"event_day_offset":19,"notes":"Same measurements as his last order"}
   ]
 }
