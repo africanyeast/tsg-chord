@@ -298,8 +298,8 @@ The full set is in `fixtures/seed.json`. Use **Success** on Paystack's test chec
 ## How AI was used
 
 - **Claude Code** helped draft the spec and plan, wrote most of the server code, tests and
-  skills from that spec, and ran the deployment. I reviewed each slice, made the design calls
-  (two teammates, server-side approval, derived balances) and tested every demo script in the
-  simulator directly.
+  skills from that spec, and ran the deployment. I made the design calls (two teammates,
+  server-side approval, derived balances), reviewed the skills and parts of the server code,
+  and tested each demo conversation myself in the simulator.
 - **Mocked data:** the customers, orders and transcripts in `fixtures/` were generated
   with AI and checked by hand. None of it is real.
