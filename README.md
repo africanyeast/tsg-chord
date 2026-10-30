@@ -122,7 +122,7 @@ PUBLIC_BASE_URL=http://localhost:8000
 The placeholder passwords and tokens work locally. To create real Paystack payment links,
 also set `PAYSTACK_SECRET_KEY` and `PAYSTACK_PUBLIC_KEY` to your test keys (`sk_test_...`,
 `pk_test_...`). Without them everything else works, but `approve` and `create_payment_link`
-cannot produce a link.
+return a clear Paystack error (`Invalid key`) and the request stays waiting.
 
 **3. Start it**
 
@@ -168,6 +168,13 @@ set `PUBLIC_BASE_URL` in `.env` to the tunnel URL, run the `up` command again, t
 ```bash
 python3.12 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python -m pytest -q          # SQLite, no network
+```
+
+No Python 3.12? Run them in Docker instead:
+
+```bash
+docker run --rm -v "$PWD":/src -w /src python:3.12-slim \
+  sh -c 'pip install -q -r requirements.txt && python -m pytest -q'
 ```
 
 ## Run it on a cloud server
@@ -237,7 +244,7 @@ To update later: `git pull && docker compose up -d --build`. Logs: `docker compo
    - `Wumi - Front Desk` (Front Desk Agent) with `skills/front-desk-skill.md`
    - `Wumi - Back Office` (Operations Manager) with `skills/back-office-skill.md`
 3. **Open the WhatsApp simulator** (Admin → Connected apps), create a chat link per teammate,
-   and run the steps in [Try it](#try-it-no-setup).
+   and run the steps in [Try it](#try-it-in-the-whatsapp-simulator).
 
 ## Test data
 
@@ -291,7 +298,7 @@ The full set is in `fixtures/seed.json`. Use **Success** on Paystack's test chec
 ## How AI was used
 
 - **Claude Code** helped draft the spec and plan, wrote most of the server code, tests and
-  skills from that spec, and ran the deployment. Claude reviewed each slice, made the design calls
+  skills from that spec, and ran the deployment. I reviewed each slice, made the design calls
   (two teammates, server-side approval, derived balances) and tested every demo script in the
   simulator directly.
 - **Mocked data:** the customers, orders and transcripts in `fixtures/` were generated
