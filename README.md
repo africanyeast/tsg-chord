@@ -37,6 +37,15 @@ and who may approve. All data in this repo is mocked, and Paystack runs in test 
 
 More customers to try are in [Test data](#test-data).
 
+**To start again from a clean state**, reload the demo data (dates shift to today) with your
+`ADMIN_BEARER_TOKEN`:
+
+```bash
+curl -X POST -H "Authorization: Bearer <ADMIN_BEARER_TOKEN>" https://<hostname>/admin/reset
+```
+
+Use `http://localhost:8000` as the host when running locally. It answers `{"status":"ok",...}`.
+
 ## How it fits together
 
 ```text
