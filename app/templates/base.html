@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+{% block head %}{% endblock %}
+<title>{% block title %}{% endblock %} · SimiTeds</title>
+<style>
+/* Neutral palette; red is kept for money owed and lateness only. */
+:root{--bg:#fafaf9;--card:#fff;--ink:#1c1c1a;--muted:#6f6e69;--faint:#a3a19b;--line:#e6e5e1;--soft:#f2f1ee;--red:#a8322a}
+@media (prefers-color-scheme:dark){:root{--bg:#141413;--card:#1c1c1a;--ink:#ecebe7;--muted:#a19f98;--faint:#6f6e69;--line:#2f2e2b;--soft:#262623;--red:#ec8a80}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:underline;text-decoration-color:var(--faint);text-underline-offset:3px}
+a:hover{text-decoration-color:var(--ink)}
+.wrap{max-width:42rem;margin:0 auto;padding:1.5rem 1rem 3rem}
+.crumbs{font-size:.875rem;color:var(--muted);margin-bottom:1.2rem;display:flex;flex-wrap:wrap;gap:.4rem}
+.crumbs a{color:var(--muted)}.crumbs span[aria-hidden]{color:var(--faint)}
+h1{font-size:1.6rem;line-height:1.2;margin:0}
+h2{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:2rem 0 .7rem;font-weight:600}
+.muted{color:var(--muted)}.small{font-size:.875rem}.red{color:var(--red)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem;margin-bottom:.75rem}
+.row{display:flex;align-items:center;justify-content:space-between;gap:.75rem}
+.pill{display:inline-block;font-size:.78rem;font-weight:500;padding:.1rem .55rem;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.pill.red{border-color:currentColor;color:var(--red)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.7rem .8rem}
+.stat span{display:block;font-size:.75rem;color:var(--muted)}
+.stat b{font-size:1.1rem;font-weight:600;font-variant-numeric:tabular-nums}
+.bar{height:4px;border-radius:999px;background:var(--soft);overflow:hidden;margin:.7rem 0 .2rem}
+.bar i{display:block;height:100%;background:var(--ink)}
+.money{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin-top:.7rem;font-variant-numeric:tabular-nums}
+.money span{display:block;font-size:.75rem;color:var(--muted)}
+.foot{margin-top:.7rem;padding-top:.6rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:.3rem .9rem}
+.list{background:var(--card);border:1px solid var(--line);border-radius:12px}
+.list>div{padding:.7rem 1.1rem;border-top:1px solid var(--line)}.list>div:first-child{border-top:0}
+.list .label{color:var(--muted)}
+.btn{display:inline-block;padding:.65rem 1.2rem;border-radius:10px;font-weight:600;background:var(--ink);color:var(--card);text-decoration:none}
+@media (max-width:28rem){h1{font-size:1.35rem}.stat b{font-size:1rem}}
+{% block style %}{% endblock %}
+</style>
+</head>
+<body>
+<main class="wrap">{% block body %}{% endblock %}</main>
+</body>
+</html>

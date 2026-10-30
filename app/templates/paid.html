@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{# Customer-facing: everything speaks as SimiTeds ("we"), never as Simi or Wumi. #}
+{% set copy = {
+  'confirmed': ('Payment received', 'Thank you' ~ (', ' ~ name if name else '') ~ '. We have received your payment.'),
+  'held': ('Payment received, being checked', 'Paystack received a different amount from the one requested, so we have not applied it yet. We will check it and get back to you on WhatsApp.'),
+  'failed': ('Payment didn’t go through', 'Paystack says this payment failed, so no money was taken. You can try again with the same link, or message us on WhatsApp for help.'),
+  'abandoned': ('Payment not completed', 'The payment was not finished, so no money was taken. You can try again with the same link whenever you are ready.'),
+  'pending': ('Confirming your payment', 'We are checking with Paystack. This usually takes a few seconds.' if refresh else 'Paystack hasn’t confirmed this payment yet. Reply “paid” on WhatsApp in a minute and we will check again.'),
+  'unknown': ('We couldn’t find this payment', 'This payment link isn’t one of ours, or it has expired. Message us on WhatsApp and we will send a fresh link.'),
+  'missing': ('No payment to show', 'This page opens after you pay with a SimiTeds payment link. Message us on WhatsApp if you need one.'),
+}[state] %}
+{% block head %}{% if refresh %}<meta http-equiv="refresh" content="4;url={{ refresh }}">{% endif %}{% endblock %}
+{% block title %}{{ copy[0] }}{% endblock %}
+{% block style %}
+.wrap{max-width:30rem;padding-top:2.5rem}
+.status{text-align:center;padding:2rem 1.4rem 1.6rem}
+.brand{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:1.4rem}
+.icon{width:3rem;height:3rem;border-radius:50%;display:grid;place-items:center;margin:0 auto 1rem;background:var(--soft)}
+.icon.bad{color:var(--red)}
+.icon svg{width:1.4rem;height:1.4rem;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.status p{color:var(--muted);margin:.6rem 0 0}
+.receipt>div{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;border-top:1px solid var(--line);font-variant-numeric:tabular-nums}
+.receipt>div:first-child{border-top:0}
+.receipt span{color:var(--muted)}
+.actions{margin-top:1rem;text-align:center}
+.spin{animation:spin 1.2s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.spin{animation:none}}
+{% endblock %}
+{% block body %}
+<div class="card status">
+  <div class="brand">SimiTeds</div>
+  <div class="icon {{ 'bad' if state in ('failed', 'abandoned') }}" aria-hidden="true">
+    {% if state == 'confirmed' %}<svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+    {% elif state in ('failed', 'abandoned') %}<svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    {% elif state == 'pending' %}<svg viewBox="0 0 24 24" class="{{ 'spin' if refresh }}"><path d="M12 3a9 9 0 1 0 9 9"/></svg>
+    {% else %}<svg viewBox="0 0 24 24"><path d="M12 7v6M12 17h.01"/></svg>{% endif %}
+  </div>
+  <h1>{{ copy[0] }}</h1>
+  <p>{{ copy[1] }}</p>
+</div>
+
+{% if o %}
+<div class="card receipt">
+  <div><span>Order</span><b>{{ o.garments|garments }}</b></div>
+  <div><span>{{ 'Amount paid' if state == 'confirmed' else 'Amount requested' }}</span><b>{{ amount }}</b></div>
+  {% if state == 'held' and charged %}<div><span>Amount received</span><b>{{ charged }}</b></div>{% endif %}
+  <div><span>Price</span>{{ o.price }}</div>
+  <div><span>Paid so far</span>{{ o.paid }}</div>
+  <div><span>Balance</span><b>{{ o.balance }}</b></div>
+  <div><span>Reference</span><span class="small">{{ reference }}</span></div>
+</div>
+{% if state == 'confirmed' %}
+<p class="small muted" style="text-align:center">
+  {% if o.status == 'ready' and not owing %}Your outfit is ready and fully paid. We will be in touch about collection or delivery.
+  {% elif owing %}Your remaining balance is {{ o.balance }}. We will keep you posted as your outfit comes together.
+  {% else %}Your outfit is fully paid. We will keep you posted as it comes together.{% endif %}
+</p>
+{% endif %}
+{% endif %}
+
+{% if state in ('failed', 'abandoned') and retry_url %}
+<div class="actions"><a class="btn" href="{{ retry_url }}">Try again</a></div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,66 @@
+{
+  "conversation_id": "conv-013",
+  "contact": {
+    "name": "Mr Okoro",
+    "phone": "08052223334",
+    "handle": null
+  },
+  "messages": [
+    {
+      "ts": "2026-10-09T11:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Good morning, suit update please",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-09T11:04:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "It is in cutting. Your 60% payment has been confirmed.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-09T11:07:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Nice. The balance I will do in two parts, before fitting and before collection.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-09T11:10:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Okay sir.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-13T18:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Please use brown buttons, not black",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-13T18:05:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Noted.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-16T08:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Morning",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-16T08:03:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Good morning sir.",
+      "media_ref": null
+    }
+  ]
+}

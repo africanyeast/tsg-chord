@@ -1,0 +1,115 @@
+{
+  "conversation_id": "conv-005",
+  "contact": {
+    "name": null,
+    "phone": null,
+    "handle": "@chiamaka.styles"
+  },
+  "messages": [
+    {
+      "ts": "2026-10-08T10:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Hello, how much is corset gown like your last post?",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-08T10:07:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Hi dear. It starts from 120k depending on fabric and detailing.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-08T10:08:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Okay thank you",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-10T09:40:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Do you have ready made?",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-10T09:50:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Not currently, all made to measure.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-10T10:01:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Alright",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-14T21:10:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Nice work ma",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-14T21:14:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Thank you 🤍",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-15T08:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-15T08:01:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-16T14:00:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-16T14:01:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-17T09:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-17T09:01:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-18T09:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "",
+      "media_ref": null
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "conversation_id": "conv-003",
+  "contact": {
+    "name": "Folake Bello",
+    "phone": "08068889900",
+    "handle": null
+  },
+  "messages": [
+    {
+      "ts": "2026-10-05T09:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Sis I need iro and buba for mummy's 60th",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-05T09:04:00+01:00",
+      "from": "customer",
+      "type": "image",
+      "text": "Something like this, lace is wine",
+      "media_ref": "IMG-FOL-001"
+    },
+    {
+      "ts": "2026-10-05T09:15:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Lovely. 45k now, fabric dey cost.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-05T09:18:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Ah last time na 40 na 😩",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-05T09:30:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "I know my dear. Let me do 42 for you.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-05T09:31:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "👍🏾",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-06T14:02:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "I will send cloth this weekend",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-06T14:05:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Okay.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-08T08:40:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Actually make the buba sleeve 3 quarter",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-08T08:44:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Noted.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-09T18:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Party is 9 Nov",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-09T18:13:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "We can work with that.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-12T20:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "How much deposit should I do?",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-12T20:05:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "You can start with half.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-14T07:13:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Good morning sis",
+      "media_ref": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+alembic>=1.15,<2
+httpx>=0.28,<1
+jinja2>=3.1,<4
+mcp>=2,<3
+paystack-sdk==1.0.1
+psycopg[binary]>=3.2,<4
+pydantic-settings>=2.8,<3
+SQLAlchemy>=2.0,<3
+starlette>=0.46,<1
+uvicorn[standard]>=0.34,<1
+
+# Test dependencies
+pytest>=8.3,<9

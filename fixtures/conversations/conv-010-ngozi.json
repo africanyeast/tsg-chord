@@ -1,0 +1,115 @@
+{
+  "conversation_id": "conv-010",
+  "contact": {
+    "name": null,
+    "phone": null,
+    "handle": "@ngozi.wears"
+  },
+  "messages": [
+    {
+      "ts": "2026-10-12T11:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Hi, got your number from Instagram. Can you make an Ankara jumpsuit?",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-12T11:04:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Yes dear, send style.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-12T11:09:00+01:00",
+      "from": "customer",
+      "type": "image",
+      "text": "Like this but long sleeves and no cutout",
+      "media_ref": "IMG-NGO-001"
+    },
+    {
+      "ts": "2026-10-12T11:20:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "It is 75k excluding fabric.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-12T11:22:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Fine. I am Ngozi btw, 0808 111 2233 is my line",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-12T11:25:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Bust 37, waist 30, hip 41. inches.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-12T11:28:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Great.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-13T15:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "I will bring fabric tomorrow",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-13T15:05:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Okay.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-14T13:11:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Dropped it at reception, blue nylon",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-14T13:15:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Received.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-16T09:45:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Can you add pockets?",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-16T09:47:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Yes.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-17T08:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Good morning",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-17T08:02:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Morning Ngozi.",
+      "media_ref": null
+    }
+  ]
+}

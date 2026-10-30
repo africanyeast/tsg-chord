@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "timezone": "Africa/Lagos",
+  "customers": [
+    {"id":"CUS-001","name":"Amaka Okafor","phone":"08031234567","email":"amaka.okafor@example.test","preferences":["dramatic train","fitted waist"],"measurements":[{"taken_day_offset":-322,"label":"December bridal set","unit":"in","values":{"bust":38,"waist":30,"hip":42,"shoulder":15,"sleeve":23,"gown_length":60}},{"taken_day_offset":-25,"label":"Fitting update","unit":"in","values":{"waist":31}}]},
+    {"id":"CUS-002","name":"Amaka Eze","phone":"08039876543","email":"amaka.eze@example.test","measurements":[{"taken_day_offset":-110,"label":"Ankara blouse","unit":"in","values":{"bust":40,"waist":34,"shoulder":16,"sleeve":10}}]},
+    {"id":"CUS-003","name":"Tunde Adebayo","phone":"08035550109","email":"tunde.adebayo@example.test","measurements":[{"taken_day_offset":-130,"label":"Agbada","unit":"in","values":{"chest":44,"shoulder":19,"sleeve":25,"length":60}}]},
+    {"id":"CUS-004","name":"Mrs Adeyemi","phone":"08027774410","email":"mrs.adeyemi@example.test","measurements":[{"taken_day_offset":-300,"label":"December gown","unit":"in","values":{"bust":42,"waist":36,"hip":46,"shoulder":16,"gown_length":58}}]},
+    {"id":"CUS-005","name":"Chinedu Nwosu","phone":"08061112223","email":"chinedu.nwosu@example.test","notes":"Prefers simple senator styling.","measurements":[]},
+    {"id":"CUS-006","name":"Mr Okoro","phone":"08052223334","email":"okoro@example.test","measurements":[{"taken_day_offset":-45,"label":"Suit","unit":"in","values":{"chest":43,"waist":38,"shoulder":18,"sleeve":25,"trouser_length":42}}]},
+    {"id":"CUS-007","name":"Folake Bello","phone":"08068889900","email":"folake.bello@example.test","measurements":[{"taken_day_offset":-95,"label":"Iro and buba","unit":"in","values":{"bust":39,"waist":33,"hip":44,"shoulder":15}}]},
+    {"id":"CUS-008","name":"Kemi Danjuma","phone":"08074445566","email":"kemi.danjuma@example.test","measurements":[{"taken_day_offset":-20,"label":"Trouser suit","unit":"in","values":{"bust":37,"waist":30,"hip":41,"trouser_length":41}}]},
+    {"id":"CUS-009","name":"Bukola Ajayi","phone":"08090001122","email":"bukola.ajayi@example.test","measurements":[{"taken_day_offset":-60,"label":"Ankara set","unit":"in","values":{"bust":36,"waist":29,"hip":40}}]},
+    {"id":"CUS-010","name":"Adaeze Nnamdi","phone":"+447700900123","email":"adaeze.nnamdi@example.test","measurements":[{"taken_day_offset":-150,"label":"Guest gown","unit":"in","values":{"bust":35,"waist":28,"hip":39,"gown_length":57}}]},
+    {"id":"CUS-011","name":"Mrs Eze","phone":"08041112229","email":"mrs.eze@example.test","measurements":[{"taken_day_offset":-90,"label":"Aso ebi","unit":"in","values":{"bust":41,"waist":35,"hip":45}}]},
+    {"id":"CUS-012","name":"Mrs Juwon","phone":"08033330011","email":"mrs.juwon@example.test","measurements":[]},
+    {"id":"CUS-013","name":"Ibrahim Sule","phone":"08036660177","email":"ibrahim.sule@example.test","measurements":[{"taken_day_offset":-40,"label":"Senator","unit":"in","values":{"chest":42,"shoulder":18,"sleeve":25,"length":44}}]},
+    {"id":"CUS-014","name":"Ngozi Obi","phone":"08055550142","email":"ngozi.obi@example.test","measurements":[{"taken_day_offset":-80,"label":"Two-piece","unit":"in","values":{"bust":38,"waist":31,"hip":42}}]},
+    {"id":"CUS-015","name":"Dr Bassey","phone":"08029990188","email":"dr.bassey@example.test","measurements":[{"taken_day_offset":-50,"label":"Agbada","unit":"in","values":{"chest":46,"shoulder":19,"sleeve":26,"length":58}}]},
+    {"id":"CUS-016","name":"Titi Lawal","phone":"08077770133","email":"titi.lawal@example.test","measurements":[{"taken_day_offset":-30,"label":"Corset dress","unit":"in","values":{"bust":36,"waist":27,"hip":39}}]},
+    {"id":"CUS-017","name":"Mrs Fashola","phone":"08044440155","email":"mrs.fashola@example.test","measurements":[{"taken_day_offset":-70,"label":"Aso oke","unit":"in","values":{"bust":43,"waist":37,"hip":47}}]},
+    {"id":"CUS-018","name":"Segun Adewale","phone":"08038880166","email":"segun.adewale@example.test","measurements":[{"taken_day_offset":-100,"label":"Suit","unit":"in","values":{"chest":41,"waist":36,"shoulder":18,"sleeve":25}}]},
+    {"id":"CUS-019","name":"Hauwa Bello","phone":"08062220199","email":"hauwa.bello@example.test","measurements":[{"taken_day_offset":-40,"label":"Kaftan","unit":"in","values":{"bust":39,"waist":33,"hip":43}}]},
+    {"id":"CUS-020","name":"Ronke Ojo","phone":"08051110122","email":"ronke.ojo@example.test","measurements":[{"taken_day_offset":-25,"label":"Gown","unit":"in","values":{"bust":37,"waist":30,"hip":41,"gown_length":58}}]},
+    {"id":"CUS-021","name":"Emeka Obi","phone":"08023330144","email":"emeka.obi@example.test","measurements":[{"taken_day_offset":-60,"label":"Senator","unit":"in","values":{"chest":43,"shoulder":18,"sleeve":25,"length":45}}]}
+  ],
+  "orders": [
+    {"id":"ORD-1001","customer_id":"CUS-003","garments":[{"type":"agbada","colour":"navy","notes":"cap included"}],"price_kobo":21000000,"paid_kobo":7500000,"status":"ready","event_day_offset":-6,"due_day_offset":-4,"fitting_day_offset":-8,"payment_state":"overdue"},
+    {"id":"ORD-1002","customer_id":"CUS-004","garments":[{"type":"lace gown","colour":"champagne","notes":"fitting not booked"}],"price_kobo":18000000,"paid_kobo":9000000,"status":"sewing","event_day_offset":2,"due_day_offset":1,"fitting_day_offset":null,"payment_state":"production"},
+    {"id":"ORD-1003","customer_id":"CUS-006","garments":[{"type":"three-piece suit","colour":"charcoal"}],"price_kobo":25000000,"paid_kobo":15000000,"status":"cutting","event_day_offset":12,"due_day_offset":8,"fitting_day_offset":5,"payment_state":"production"},
+    {"id":"ORD-1004","customer_id":"CUS-007","garments":[{"type":"aso oke iro and buba","colour":"wine"}],"price_kobo":9500000,"paid_kobo":9500000,"status":"delivered","event_day_offset":-20,"due_day_offset":-23,"fitting_day_offset":-27,"payment_state":"paid"},
+    {"id":"ORD-1005","customer_id":"CUS-001","garments":[{"type":"corset gown","colour":"black"}],"price_kobo":12000000,"paid_kobo":0,"status":"in_progress","event_day_offset":18,"due_day_offset":14,"fitting_day_offset":10,"payment_state":"unconfirmed_deposit"},
+    {"id":"ORD-1006","customer_id":"CUS-008","garments":[{"type":"trouser suit","colour":"royal blue"}],"price_kobo":14000000,"paid_kobo":7000000,"status":"sewing","event_day_offset":16,"due_day_offset":11,"fitting_day_offset":7,"payment_state":"production"},
+    {"id":"ORD-1007","customer_id":"CUS-009","garments":[{"type":"ankara two-piece","colour":"gold"}],"price_kobo":8000000,"paid_kobo":8000000,"status":"delivered","event_day_offset":-40,"due_day_offset":-43,"fitting_day_offset":-47,"payment_state":"paid"},
+    {"id":"ORD-1008","customer_id":"CUS-010","garments":[{"type":"guest gown","colour":"teal"}],"price_kobo":16000000,"paid_kobo":16000000,"status":"delivered","event_day_offset":-35,"due_day_offset":-38,"fitting_day_offset":-42,"payment_state":"paid"},
+    {"id":"ORD-1009","customer_id":"CUS-011","garments":[{"type":"aso ebi set","colour":"coral"}],"price_kobo":11000000,"paid_kobo":11000000,"status":"delivered","event_day_offset":-60,"due_day_offset":-63,"fitting_day_offset":-67,"payment_state":"paid"},
+    {"id":"ORD-1010","customer_id":"CUS-012","garments":[{"type":"lace iro and buba","colour":"green"}],"price_kobo":13000000,"paid_kobo":6500000,"status":"in_progress","event_day_offset":21,"due_day_offset":16,"fitting_day_offset":null,"payment_state":"production"},
+    {"id":"ORD-1011","customer_id":"CUS-013","garments":[{"type":"senator outfit","colour":"cream"}],"price_kobo":9000000,"paid_kobo":9000000,"status":"ready","event_day_offset":2,"due_day_offset":-1,"fitting_day_offset":-5,"payment_state":"paid"},
+    {"id":"ORD-1012","customer_id":"CUS-014","garments":[{"type":"two-piece","colour":"lilac"}],"price_kobo":7500000,"paid_kobo":7500000,"status":"delivered","event_day_offset":-70,"due_day_offset":-73,"fitting_day_offset":-77,"payment_state":"paid"},
+    {"id":"ORD-1013","customer_id":"CUS-015","garments":[{"type":"agbada","colour":"white"}],"price_kobo":19000000,"paid_kobo":19000000,"status":"sewing","event_day_offset":14,"due_day_offset":9,"fitting_day_offset":6,"payment_state":"paid"},
+    {"id":"ORD-1014","customer_id":"CUS-016","garments":[{"type":"corset dress","colour":"burgundy"}],"price_kobo":10000000,"paid_kobo":6000000,"status":"ready","event_day_offset":3,"due_day_offset":0,"fitting_day_offset":-4,"payment_state":"production"},
+    {"id":"ORD-1015","customer_id":"CUS-017","garments":[{"type":"aso oke set","colour":"purple"}],"price_kobo":22000000,"paid_kobo":11000000,"status":"cutting","event_day_offset":28,"due_day_offset":21,"fitting_day_offset":14,"payment_state":"production"},
+    {"id":"ORD-1016","customer_id":"CUS-018","garments":[{"type":"three-piece suit","colour":"navy"}],"price_kobo":18000000,"paid_kobo":18000000,"status":"delivered","event_day_offset":-90,"due_day_offset":-93,"fitting_day_offset":-97,"payment_state":"paid"},
+    {"id":"ORD-1017","customer_id":"CUS-019","garments":[{"type":"kaftan","colour":"sand"}],"price_kobo":6000000,"paid_kobo":6000000,"status":"delivered","event_day_offset":-30,"due_day_offset":-33,"fitting_day_offset":-37,"payment_state":"paid"},
+    {"id":"ORD-1018","customer_id":"CUS-020","garments":[{"type":"evening gown","colour":"emerald"}],"price_kobo":12500000,"paid_kobo":12500000,"status":"sewing","event_day_offset":9,"due_day_offset":6,"fitting_day_offset":2,"payment_state":"paid"},
+    {"id":"ORD-1019","customer_id":"CUS-021","garments":[{"type":"senator outfit","colour":"grey"}],"price_kobo":8500000,"paid_kobo":5000000,"status":"ready","event_day_offset":-3,"due_day_offset":-2,"fitting_day_offset":-6,"payment_state":"overdue"}
+  ],
+  "payments": [
+    {"id":"PAY-001","order_id":"ORD-1003","amount_kobo":15000000,"status":"confirmed","provider":"paystack","reference":"PSK-OKORO-600","confirmed_day_offset":-14},
+    {"id":"PAY-002","order_id":"ORD-1005","amount_kobo":5000000,"status":"claimed_unconfirmed","provider":null,"reference":null,"confirmed_day_offset":null}
+  ]
+}

@@ -1,0 +1,7 @@
+services:
+  caddy:
+    profiles: ["proxy"]
+
+  api:
+    ports:
+      - "8000:8000"

@@ -1,0 +1,52 @@
+{
+  "conversation_id": "conv-014",
+  "contact": {
+    "name": "Mrs Eze",
+    "phone": "08041112229",
+    "handle": null
+  },
+  "messages": [
+    {
+      "ts": "2026-10-07T16:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "I have collected the dress, it is perfect!",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-07T16:03:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Thank you so much ma, enjoy the event.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-07T16:10:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "God will enlarge your business, amen 🙏🏾",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-07T16:12:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Amen, thank you ma 🤍",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-11T09:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "My sister said she liked it too",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-11T09:05:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Please send her my regards.",
+      "media_ref": null
+    }
+  ]
+}

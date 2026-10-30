@@ -1,0 +1,23 @@
+# Project reference and planning artefacts (not tracked)
+/Artefacts/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.venv/
+venv/
+
+# Secrets and local environment overrides
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.DS_Store
+.idea/
+.vscode/
+
+# Personal Claude Code settings
+.claude/settings.local.json

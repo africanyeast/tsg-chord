@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% from "_ui.html" import crumbs, order_card %}
+{% block title %}{{ p.name }}{% endblock %}
+{% block style %}
+.end{text-align:right}
+.measure{display:grid;grid-template-columns:auto 1fr auto;align-items:baseline;gap:.15rem .6rem;font-variant-numeric:tabular-nums}
+.measure .prev{grid-column:1 / -1}
+{% endblock %}
+{% block body %}
+{{ crumbs([(p.name, None)]) }}
+<h1>{{ p.name }}</h1>
+
+{% set blank = '<span class="muted">None recorded</span>'|safe %}
+<div class="list" style="margin-top:1rem">
+  <div class="row"><span class="label">Phone</span>{% if p.phone %}<a href="tel:{{ p.phone }}">{{ p.phone }}</a>{% else %}{{ blank }}{% endif %}</div>
+  <div class="row"><span class="label">Email</span>{% if p.email %}<a href="mailto:{{ p.email }}">{{ p.email }}</a>{% else %}{{ blank }}{% endif %}</div>
+  <div class="row"><span class="label">Preferences</span>{% if p.preferences %}<span class="end">{{ p.preferences|join(', ') }}</span>{% else %}{{ blank }}{% endif %}</div>
+  <div class="row"><span class="label">Notes</span>{% if p.notes %}<span class="end">{{ p.notes }}</span>{% else %}{{ blank }}{% endif %}</div>
+</div>
+
+<h2>Money</h2>
+<div class="stats">
+  <div class="stat"><span>Outstanding</span><b class="{{ 'red' if owing }}">{{ p.total_balance }}</b></div>
+  <div class="stat"><span>Paid to date</span><b>{{ total_paid }}</b></div>
+  <div class="stat"><span>Open orders</span><b>{{ open_orders }}</b></div>
+</div>
+
+<h2>Orders</h2>
+{% for o in orders %}{{ order_card(o) }}{% else %}<p class="muted">No orders yet.</p>{% endfor %}
+
+<h2>Measurements</h2>
+{% if readings %}
+<div class="list">
+  {% for part, rs in readings.items() %}{% set now = rs[0] %}
+  <div class="measure">
+    <span class="label">{{ part|replace('_', ' ')|capitalize }}</span>
+    <b>{{ now.value }} {{ now.unit or '' }}</b>
+    <span class="small muted">{{ now.taken_on|day }}</span>
+    {% if rs|length > 1 %}<span class="small muted prev">Before: {% for r in rs[1:] %}{{ r.value }} {{ r.unit or '' }} ({{ r.taken_on|day }}){{ ', ' if not loop.last }}{% endfor %}</span>{% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<p class="muted">None on record yet.</p>
+{% endif %}
+{% endblock %}

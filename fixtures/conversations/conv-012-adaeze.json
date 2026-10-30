@@ -1,0 +1,115 @@
+{
+  "conversation_id": "conv-012",
+  "contact": {
+    "name": "Adaeze Nnamdi",
+    "phone": "+447700900123",
+    "handle": null
+  },
+  "messages": [
+    {
+      "ts": "2026-10-03T18:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Hello from London! I need native for my cousin's traditional wedding in Lagos",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-03T18:08:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Congratulations. Send inspiration.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-03T18:15:00+01:00",
+      "from": "customer",
+      "type": "image",
+      "text": "I like this coral george wrapper and blouse",
+      "media_ref": "IMG-ADA-001"
+    },
+    {
+      "ts": "2026-10-03T18:18:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Can you deliver to my aunt in Lekki?",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-03T18:30:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "For the blouse and wrapper, 160k naira. Delivery separate.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-03T18:34:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Is that about £80?",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-03T18:35:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Please pay in naira, 160k.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-04T09:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Okay. Event is 6 December, I fly in 3rd",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-04T09:20:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Bust 39 waist 32 hip 43, shoulder 15.5, in inches",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-04T09:25:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Noted.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-06T12:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Aunty address is 12 Admiralty Way, Lekki Phase 1",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-06T12:04:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Okay.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-08T16:10:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "I will transfer next week",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-12T09:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Morning ma",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-12T09:03:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Good morning dear.",
+      "media_ref": null
+    }
+  ]
+}

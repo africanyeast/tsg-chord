@@ -1,0 +1,115 @@
+{
+  "conversation_id": "conv-008",
+  "contact": {
+    "name": "Tunde",
+    "phone": "08035550109",
+    "handle": null
+  },
+  "messages": [
+    {
+      "ts": "2026-10-08T16:20:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Good afternoon Tunde, your navy agbada is ready. Balance is 135k.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-08T17:01:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "I will sort it before weekend boss",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-10T11:00:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Just a gentle reminder on the balance sir.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-10T11:05:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Noted.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-13T09:15:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "I don pay o, check your account",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-13T09:16:00+01:00",
+      "from": "customer",
+      "type": "image",
+      "text": "transfer screenshot",
+      "media_ref": "RCPT-TUN-135"
+    },
+    {
+      "ts": "2026-10-13T09:17:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Network was somehow so I used another account",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-13T09:32:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Okay let me confirm.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-14T18:20:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Can my brother pick it tomorrow?",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-14T18:24:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Once payment reflects, yes.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-15T07:40:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Please check again sir",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-15T13:02:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "I am in meeting now",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-16T08:10:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Good morning.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-16T08:12:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Morning boss",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-17T17:40:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Any update?",
+      "media_ref": null
+    }
+  ]
+}

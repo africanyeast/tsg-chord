@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% from "_ui.html" import crumbs, status_pill, money_pill, money, payment_row %}
+{% block title %}{{ o.garments|garments }}{% endblock %}
+{% block body %}
+{{ crumbs([(o.customer, o.customer_url), (o.order_id, None)]) }}
+<h1>{{ o.garments|garments }}</h1>
+<div style="margin-top:.4rem">{{ status_pill(o.status) }}</div>
+
+<h2>Money</h2>
+<div class="card">
+  <div class="row"><b>Payment</b>{{ money_pill(o) }}</div>
+  {{ money(o) }}
+  {% if o.price %}<div class="small muted">{{ o.pct_paid }}% paid</div>{% endif %}
+</div>
+
+<h2>Dates</h2>
+<div class="list">
+  <div class="row"><span class="label">Fitting</span><span class="{{ 'muted' if not o.fitting_date }}">{{ o.fitting_date|day if o.fitting_date else 'Not booked' }}</span></div>
+  <div class="row"><span class="label">Due</span>
+    <span>{{ o.due_date|day if o.due_date else '—' }}{% if o.days_overdue %} <span class="pill red">{{ o.days_overdue }} day{{ 's' if o.days_overdue != 1 }} overdue</span>{% endif %}</span></div>
+  <div class="row"><span class="label">Event</span><span>{{ o.event_date|day if o.event_date else '—' }}</span></div>
+</div>
+
+{% if o.notes %}<h2>Notes</h2><div class="card">{{ o.notes }}</div>{% endif %}
+
+<h2>Payments</h2>
+{% if payments %}
+<div class="list">{% for p in payments %}<div>{{ payment_row(p) }}</div>{% endfor %}</div>
+{% else %}
+<p class="muted">No payments or links yet.</p>
+{% endif %}
+{% endblock %}

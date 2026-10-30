@@ -1,0 +1,115 @@
+{
+  "conversation_id": "conv-001",
+  "contact": {
+    "name": "Amaka Okafor",
+    "phone": "08031234567",
+    "handle": null
+  },
+  "messages": [
+    {
+      "ts": "2026-10-02T09:12:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Good morning Simi, my introduction is coming up o 😭",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-02T09:14:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Aww congrats Amaka. Send the style.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-02T09:18:00+01:00",
+      "from": "customer",
+      "type": "image",
+      "text": "This neckline please, but black silk",
+      "media_ref": "IMG-AMA-001"
+    },
+    {
+      "ts": "2026-10-02T10:03:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "The gown as pictured is 800k. I can use your last measurements.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-04T18:40:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Can we add small train like the second picture?",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-04T18:44:00+01:00",
+      "from": "customer",
+      "type": "image",
+      "text": "The train should not be too plenty pls",
+      "media_ref": "IMG-AMA-002"
+    },
+    {
+      "ts": "2026-10-04T19:02:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "With the detachable train it is 850k, not 800.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-04T19:05:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Okay 850 then. I need it before 18th November, event is 20th.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-06T11:21:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "I have sent 500k now abeg check",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-06T11:22:00+01:00",
+      "from": "customer",
+      "type": "image",
+      "text": "transfer receipt",
+      "media_ref": "RCPT-AMA-500"
+    },
+    {
+      "ts": "2026-10-07T08:15:00+01:00",
+      "from": "customer",
+      "type": "voice_transcript",
+      "text": "[voice note 0:18] Please my waist is now thirty one, not thirty. I have been trying to eat well o.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-12T14:00:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "We will fit it close to your date.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-16T20:31:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Simi my event has moved to 27 November now, family matter. The gown can still be before 18th if possible sha.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-17T09:10:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Good morning ma 🙏🏾",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-17T09:18:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Morning dear",
+      "media_ref": null
+    }
+  ]
+}

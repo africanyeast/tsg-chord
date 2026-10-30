@@ -1,0 +1,115 @@
+{
+  "conversation_id": "conv-004",
+  "contact": {
+    "name": "Chinedu",
+    "phone": "08061112223",
+    "handle": null
+  },
+  "messages": [
+    {
+      "ts": "2026-10-01T17:22:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Madam I need two senator for my brother wedding",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-01T17:24:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Send styles and colours.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-01T17:28:00+01:00",
+      "from": "customer",
+      "type": "image",
+      "text": "First should be cream, second bottle green",
+      "media_ref": "IMG-CHI-001"
+    },
+    {
+      "ts": "2026-10-01T18:02:00+01:00",
+      "from": "customer",
+      "type": "voice_transcript",
+      "text": "[voice note 0:31] My chest na forty four, shoulder nineteen, sleeve twenty five. Trouser waist thirty eight, length forty two. Make the cream one simple.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-02T08:10:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Both will be 110k.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-02T08:12:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Sharp.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-03T21:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Wedding na 24th Nov",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-06T10:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Omo date don shift, na 29 November now",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-06T10:05:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Okay I have seen it.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-09T08:22:00+01:00",
+      "from": "customer",
+      "type": "voice_transcript",
+      "text": "[voice note 0:12] Sorry sorry, wedding is first December finally. Family people no dey rest.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-09T08:30:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "😂 noted.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-11T13:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "I will bring fabric Tuesday",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-13T18:33:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "I have dropped 4 yards cream, 4 yards green",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-13T18:40:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Received.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-15T07:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Morning madam",
+      "media_ref": null
+    }
+  ]
+}

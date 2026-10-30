@@ -1,0 +1,115 @@
+{
+  "conversation_id": "conv-009",
+  "contact": {
+    "name": "Bukola Ajayi",
+    "phone": "08090001122",
+    "handle": null
+  },
+  "messages": [
+    {
+      "ts": "2026-10-01T08:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Hi Simi, six bridesmaid dresses for my sister's wedding",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-01T08:05:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Okay, send styles and sizes.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-01T08:20:00+01:00",
+      "from": "customer",
+      "type": "image",
+      "text": "All same dusty rose, different sizes",
+      "media_ref": "IMG-BUK-001"
+    },
+    {
+      "ts": "2026-10-02T12:00:00+01:00",
+      "from": "customer",
+      "type": "voice_transcript",
+      "text": "[voice note 0:44] Ada bust 34 waist 28 hip 38. Bisi 38, 32, 42. Carol is 40, 34, 44. Dami is 36, 30, 40. Eno 42, 36, 46. Feyi 38, 31, 41. All inches.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-02T12:10:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "35k each, so 210k total.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-03T18:01:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Dami has travelled, remove her please",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-04T08:20:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "My aunt said there should be small group discount?",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-04T08:30:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Let us finish the count first.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-05T19:40:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Feyi's cousin Zara is joining, same style. Bust 37 waist 30 hip 40.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-06T09:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Ada has paid her own 20k to me, Bisi paid 10k direct to you, Carol says next week",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-06T09:04:00+01:00",
+      "from": "customer",
+      "type": "image",
+      "text": "Bisi transfer receipt",
+      "media_ref": "RCPT-BUK-BISI-010"
+    },
+    {
+      "ts": "2026-10-06T09:12:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Okay.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-08T10:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Wedding is 22 November, we need them 19th",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-09T18:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Please label each dress well o",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-10T07:00:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Noted.",
+      "media_ref": null
+    }
+  ]
+}

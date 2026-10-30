@@ -1,0 +1,1 @@
+"""Wumi service package."""

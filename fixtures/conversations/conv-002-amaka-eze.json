@@ -1,0 +1,115 @@
+{
+  "conversation_id": "conv-002",
+  "contact": {
+    "name": "Amaka Eze",
+    "phone": "08039876543",
+    "handle": null
+  },
+  "messages": [
+    {
+      "ts": "2026-10-10T12:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Hi aunty, it is Amaka from Chioma's office",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-10T12:06:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Hi Amaka, how are you?",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-10T12:15:00+01:00",
+      "from": "customer",
+      "type": "image",
+      "text": "I want these two blouse styles in my Ankara",
+      "media_ref": "IMG-AE-001"
+    },
+    {
+      "ts": "2026-10-10T12:17:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "One peplum, one plain. Same fabric.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-10T13:04:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "28k each for this style.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-10T13:07:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Okay ma, 2 is fine",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-11T08:01:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Will bring fabric on Monday",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-11T08:30:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "No problem.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-13T16:12:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "I dropped it with the gateman, brown bag",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-13T16:14:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Seen, thank you.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-14T19:00:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Hope the fabric is not too small?",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-14T19:10:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "It is enough for both.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-15T07:45:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Thank you ma",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-16T11:30:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "My old measurements should still work I think",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-16T11:44:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Alright.",
+      "media_ref": null
+    }
+  ]
+}

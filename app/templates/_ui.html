@@ -1,0 +1,70 @@
+{% macro crumbs(items) -%}
+<nav class="crumbs" aria-label="Breadcrumb">
+  <span>SimiTeds</span>
+  {% for label, url in items %}<span aria-hidden="true">/</span>{% if url %}<a href="{{ url }}">{{ label }}</a>{% else %}<span aria-current="page">{{ label }}</span>{% endif %}{% endfor %}
+</nav>
+{%- endmacro %}
+
+{% macro status_pill(status) -%}
+<span class="pill">{{ status|status_label }}</span>
+{%- endmacro %}
+
+{% macro money_pill(o) -%}
+{%- if o.payment_state == 'awaiting_price' -%}<span class="pill">Awaiting price</span>
+{%- elif o.payment_state == 'paid' -%}<span class="pill">Paid in full</span>
+{%- elif o.payment_state == 'overdue' -%}<span class="pill red">Overdue</span>
+{%- elif o.payment_state == 'unconfirmed_deposit' -%}<span class="pill">Deposit not confirmed</span>
+{%- else -%}<span class="pill">Balance due</span>
+{%- endif -%}
+{%- endmacro %}
+
+{% macro money(o) -%}
+{% if o.price %}
+<div class="money">
+  <div><span>Price</span>{{ o.price }}</div>
+  <div><span>Paid</span>{{ o.paid }}</div>
+  <div><span>Balance</span><b class="{{ 'red' if o.owing }}">{{ o.balance }}</b></div>
+</div>
+<div class="bar" role="img" aria-label="{{ o.pct_paid }}% paid"><i style="width:{{ o.pct_paid }}%"></i></div>
+{% else %}
+<p class="muted small" style="margin:.6rem 0 0">Price not agreed yet.</p>
+{% endif %}
+{%- endmacro %}
+
+{% macro order_card(o) -%}
+<div class="card">
+  <div class="row">
+    <a href="{{ o.order_url }}"><b>{{ o.garments|garments }}</b></a>
+    {{ status_pill(o.status) }}
+  </div>
+  {{ money(o) }}
+  <div class="foot">
+    {% if o.due_date %}<span>Due {{ o.due_date|day }}</span>{% endif %}
+    {% if o.event_date %}<span>Event {{ o.event_date|day }}</span>{% endif %}
+    {% if o.days_overdue %}<span class="red">{{ o.days_overdue }} day{{ 's' if o.days_overdue != 1 }} overdue</span>{% endif %}
+    <span style="margin-left:auto">{{ o.order_id }}</span>
+  </div>
+</div>
+{%- endmacro %}
+
+{% macro payment_row(p) -%}
+{% set label = {
+  'confirmed': ('Paid', ''),
+  'pending': ('Link sent, not paid yet', ''),
+  'held': ('Held: wrong amount', 'red'),
+  'failed': ('Failed', 'red'),
+  'abandoned': ('Not completed', ''),
+  'claimed_unconfirmed': ('Customer says paid, not confirmed', ''),
+}.get(p.status, (p.status|status_label, '')) %}
+<div class="row">
+  <div>
+    <b>{{ p.amount }}</b>
+    <div class="small muted">
+      {{ 'Paystack' if p.provider == 'paystack' else 'Cash or transfer' if p.provider == 'manual' else (p.provider or 'Recorded')|capitalize }}
+      {% if p.on %} · {{ p.on|day }}{% endif %}
+      {% if p.status == 'held' and p.charged %} · charged {{ p.charged }}{% endif %}
+    </div>
+  </div>
+  <span class="pill {{ label[1] }}">{{ label[0] }}</span>
+</div>
+{%- endmacro %}

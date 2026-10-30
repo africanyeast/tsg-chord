@@ -1,0 +1,12 @@
+.git
+.env
+.env.*
+!.env.example
+.venv
+venv
+__pycache__
+.pytest_cache
+.coverage
+Artefacts
+fixtures/keys
+tests

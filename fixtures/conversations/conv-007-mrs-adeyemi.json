@@ -1,0 +1,115 @@
+{
+  "conversation_id": "conv-007",
+  "contact": {
+    "name": "Mrs Adeyemi",
+    "phone": "08027774410",
+    "handle": null
+  },
+  "messages": [
+    {
+      "ts": "2026-10-17T08:20:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Good morning dear, I need one gown urgently for the women's conference",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-17T08:24:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Good morning ma. When is it?",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-17T08:25:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Friday morning, God will help us",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-17T08:28:00+01:00",
+      "from": "customer",
+      "type": "image",
+      "text": "Simple long gown, navy blue please",
+      "media_ref": "IMG-ADE-001"
+    },
+    {
+      "ts": "2026-10-17T08:35:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "I can try. It will be 180k because of the rush.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-17T08:40:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Okay my daughter will send money.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-17T08:42:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Use same as December, I have lost weight small small though",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-17T08:49:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Let me check.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-17T09:20:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "No sleeve please, cap sleeve is okay",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-17T10:02:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Can fitting be tomorrow evening?",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-17T10:05:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "I will confirm.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-17T13:10:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Please don't disappoint me o",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-17T13:12:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "We will do our best ma.",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-18T07:25:00+01:00",
+      "from": "customer",
+      "type": "text",
+      "text": "Morning dear",
+      "media_ref": null
+    },
+    {
+      "ts": "2026-10-18T07:30:00+01:00",
+      "from": "owner",
+      "type": "text",
+      "text": "Good morning ma.",
+      "media_ref": null
+    }
+  ]
+}
