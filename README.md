@@ -31,8 +31,8 @@ and who may approve. All data in this repo is mocked, and Paystack runs in test 
 1. Give the name `Amaka Okafor` and ask for a wedding outfit. When asked which garment she
    last ordered, answer `black corset gown`.
 2. As the Business Owner, say `Anything waiting?` and approve the request with a price and deposit.
-3. As Amaka, ask for an update. Pay the Paystack link with the test card
-   `4084 0840 8408 4081` (any future expiry, CVV `408`), then say `paid`.
+3. As Amaka, ask for an update. Open the Paystack link, choose **Success**
+   on the test checkout and click **Pay**, then say `paid`.
 4. As the Business Owner, ask for the brief again and see the payment in it.
 
 More customers to try are in [Test data](#test-data).
